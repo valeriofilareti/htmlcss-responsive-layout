@@ -1,3 +1,55 @@
-body {
-  background-color: yellowgreen;
+/* generals */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.flex-container {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.debug {
+  background-color: rgba(48, 130, 250, 0.3) ;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+/* /generals */
+/* header */
+header {
+  height: 80px;
+  width: 100%;
+}
+header nav {
+  display: none;
+}
+header ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+
+/* /header */
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px) {
+  header nav {
+    display: block;
+  }
+  header .menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+}
+/* RESPONSIVE */
