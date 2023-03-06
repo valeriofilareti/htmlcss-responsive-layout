@@ -47,7 +47,7 @@ header ul li {
   text-align: center;
 }
 .app-store-section .col {
-  min-height: 300px;
+  min-height: 100px;
   width: 100%;
   border: 1px solid black;
   margin: 10px 0;
@@ -92,8 +92,30 @@ header ul li {
   display: inline-block;
   padding: 20px;
 }
-
 /* /strategic-plan-section */
+/* testimonials-section */
+.testimonials-text {
+  text-align: center;
+}
+.testimonial-card {
+  margin: 15px;
+  flex-direction: column;
+}
+.testimonial-img-box {
+  width: 180px;
+  height: 180px;
+  /* border-radius: 100vw; */
+}
+.testimonial-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.testimonial-cit {
+  text-align: center;
+  line-height: 30px;
+}
+/* testimonials-section */
 
 
 
@@ -145,6 +167,14 @@ header ul li {
     margin-top: 130px;
   }
   /* strategic-plan-section */
+  /* testimonials-section */
+  .testimonial-card {
+    flex-direction: row;
+  }
+  .testimonial-img-box {
+    width: 20%;
+  }
+  /* testimonials-section */
 }
 @media screen and (min-width: 1024px) {
   .container {
