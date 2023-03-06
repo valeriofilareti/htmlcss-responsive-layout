@@ -47,7 +47,7 @@ header ul li {
   text-align: center;
 }
 .app-store-section .col {
-  min-height: 100px;
+  min-height: 300px;
   width: 100%;
   border: 1px solid black;
   margin: 10px 0;
@@ -56,7 +56,10 @@ header ul li {
   width: 150px;
   height: 200px;
 }
-.first-wrap, .second-wrap {
+.first.col {
+  flex-direction: column;
+}
+.first-wrap, .second-wrap{
   flex-direction: column;
 }
 .app-left > h1, p, button {
@@ -73,15 +76,52 @@ header ul li {
   border: 1px solid black;
 }
 /* app-store-section */
+/* strategic-plan-section */
+.first.card-img {
+  width: 100%;
+  height: 400px;
+}
+.second.card-img {
+  width: 100%;
+  height: 250px;
+}
+.container.debug:last-child {
+  text-align: center;
+}
+.card {
+  display: inline-block;
+  padding: 20px;
+}
+
+/* /strategic-plan-section */
+
+
 
 
 /* RESPONSIVE */
+
+
+
 @media screen and (min-width: 768px) {
+
+  /* header */
+
   header nav {
     display: block;
   }
   header .menu {
     display: none;
+  }
+
+  /* /header */
+
+  /* app-store-section */
+
+  .first.col {
+    flex-direction: row;
+  }
+  .app-right {
+    align-items: flex-end;
   }
   .first-wrap, .second-wrap {
     flex-direction: row;
@@ -96,6 +136,15 @@ header ul li {
   .second-wrap .col {
     width: 30%;
   }
+  /* /app-store-section */
+  /* strategic-plan-section */
+  .strategic-planning-section .container {
+    display: flex;
+  }
+  .strategic-planning-section .second-wrap {
+    margin-top: 130px;
+  }
+  /* strategic-plan-section */
 }
 @media screen and (min-width: 1024px) {
   .container {
