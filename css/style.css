@@ -7,11 +7,17 @@
 .flex-container {
   display: flex;
 }
+.wrap {
+  flex-wrap: wrap;
+}
 .align-center {
   align-items: center;
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
 }
 .debug {
   background-color: rgba(48, 130, 250, 0.3) ;
@@ -34,8 +40,39 @@ header ul li {
   margin-right: 10px;
   list-style: none;
 }
-
 /* /header */
+
+/* app-store-section */
+.app-store-section .row {
+  text-align: center;
+}
+.app-store-section .col {
+  min-height: 100px;
+  width: 100%;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+.app-store-section .phone-img {
+  width: 150px;
+  height: 200px;
+}
+.first-wrap, .second-wrap {
+  flex-direction: column;
+}
+.app-left > h1, p, button {
+  padding: 10px;
+}
+.app-right {
+  width: 100%;
+  justify-content: center;
+  padding-top: 20px;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+/* app-store-section */
 
 
 /* RESPONSIVE */
@@ -45,6 +82,19 @@ header ul li {
   }
   header .menu {
     display: none;
+  }
+  .first-wrap, .second-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .app-store-section .first.col {
+    width: 65%;
+  }
+  .app-store-section .second.col {
+    width: 30%;
+  }
+  .second-wrap .col {
+    width: 30%;
   }
 }
 @media screen and (min-width: 1024px) {
